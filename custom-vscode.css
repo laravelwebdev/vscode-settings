@@ -53,7 +53,7 @@
   font-family: 'Fira Code', monospace !important;
   font-size: 13px !important;
   font-weight: 400 !important;
-  color: #FFF !important;
+  color: rgba(171, 178, 191, 0.6) !important;
 }
 
 /* Sidebar top shadow */
@@ -129,9 +129,9 @@
 .search-label {
   font-family: 'Fira Code' !important;
   font-size: 14px !important;
-  color: #fff;
-  display: block;
-  margin-left: 60px;
+  color: rgba(171, 178, 191, 0.6) !important;
+  display: block !important;
+  margin-left: 60px !important;
 }
 
 /* Search icon */
