@@ -1,3 +1,8 @@
+html *
+{
+   font-family: 'Fira Code' !important;
+}
+
 .mtk3 {
   font-family: 'Fira Code' !important;
   color: #008c7d !important;
