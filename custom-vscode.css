@@ -1,8 +1,3 @@
-html *
-{
-   font-family: 'Fira Code' !important;
-}
-
 .mtk3 {
   font-family: 'Fira Code' !important;
   color: #008c7d !important;
@@ -45,6 +40,7 @@ html *
 .monaco-list.list_id_1 .monaco-list-row.selected .label-name {
   color: #fff !important;
   opacity: 1 !important;
+  font-family: 'Fira Code' !important;
 }
 
 /* File explorer action buttons */
@@ -182,17 +178,13 @@ html *
   background: none !important;
 }
 
-/* .monaco-list-row.focused {
-  background-color: rgb(181 198 228 / 25%) !important;
-} */
+.label-name {
+   font-family: 'Fira Code' !important;
+}
 
-/* .synthetic-focus {
-  outline-color: rgba(50, 50, 50, 1) !important;
-} */
-
-/* .quick-input-widget .monaco-label {
-  font-size: 11px !important;
-} */
+.label-description {
+   font-family: 'Fira Code' !important;
+}
 
 /* Command palette text input */
 .quick-input-filter .monaco-inputbox {
