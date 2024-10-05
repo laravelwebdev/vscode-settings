@@ -320,3 +320,14 @@ li.action-item.icon.checked a.action-label.codicon {
   background-size: contain !important;
   width: 60% !important;
 }
+
+@keyframes scaleSize {
+  0% {
+    transform: scale(.75)
+  }
+
+  100% {
+    transform: scale(1.35) translateX(-3px);
+  }
+}
+
