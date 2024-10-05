@@ -292,6 +292,7 @@ li.action-item.icon.checked a.action-label.codicon {
   left: 0;
   backdrop-filter: blur(8px);
   transition: all 1s ease-in;
+  z-index: 99;
 }
 
 /* Command palette's input box placeholder. */
