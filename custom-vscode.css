@@ -1,8 +1,26 @@
-.mac, 
-.windows, 
+/* ------------ Reset Font Family ------------ */
+.mac,
+.windows,
 .linux {
   font-family: 'Fira Code' !important;
-  color: #008c7d !important;
+} 
+
+/* ------------ Title Bar ------------ */
+.monaco-workbench .part.titlebar {
+  border-bottom: 1px solid #181C20 !important;
+}
+
+.monaco-workbench .part.titlebar>.titlebar-container>.titlebar-center>.window-title {
+  font-size: 14px !important;
+}
+
+/* ------------ Command Center ------------ */
+.monaco-workbench .part.titlebar>.titlebar-container>.titlebar-center>.window-title>.command-center.hide {
+  visibility: visible !important;
+}
+
+.monaco-workbench .part.titlebar>.titlebar-container>.titlebar-center>.window-title>.command-center>.monaco-toolbar>.monaco-action-bar>.actions-container>.action-item:not(:has(.monaco-toolbar)) {
+  display: none !important;
 }
 
 /* ------------ Activity Bar ------------ */
@@ -80,238 +98,214 @@ li.action-item.icon.checked a.action-label.codicon {
   right: 4px;
 }
 
-.mtk3 {
-  font-family: 'Fira Code' !important;
-  color: #008c7d !important;
+/* ------------ Sidebar ------------ */
+.monaco-workbench .part>.composite.title>.title-actions {
+  padding-left: 0;
+  margin-left: -16px;
 }
 
-.line-numbers {
-  position: relative !important;
-  width: 35px !important;
-  font-size: 14px !important;
-  font-family: 'Fira Code' !important;
-  opacity: .3;
+.monaco-workbench .part.sidebar .title-actions .action-item {
+  margin-right: 0;
 }
 
-/* Code canvas top shadow */
-.monaco-editor .scroll-decoration {
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, .75) !important;
-  top: -6px !important;
+.monaco-list.mouse-support .monaco-list-row {
+  border-radius: 6px;
+  width: calc(100% - 8px);
+  padding-right: 4px !important;
+  padding-left: 0 !important;
+  margin-left: 4px !important;
 }
 
-/* Toolbars when tabs are enabled. */
-.monaco-workbench .part.editor>.content .editor-group-container>.title .editor-actions {
-  display: none !important;
+.show-file-icons .folder-icon::before, 
+.show-file-icons .rootfolder-icon::before {
+  filter: brightness(0.6);
 }
 
-/* Side bar */
-.part.sidebar {
-  box-shadow: 0px 0px 50px rgba(0, 0, 0, .25);
-  background-color: rgb(40, 44, 52) !important;
+.monaco-workbench .monaco-list:not(.element-focused):focus:before,
+.part.sidebar .monaco-list.mouse-support.selection-none.last-focused::before,
+.part.sidebar .welcome-view-content:focus {
+  outline-color: transparent !important;
 }
 
-/* File Explorer Selected Item */
-.monaco-list.list_id_1 .monaco-list-row.selected {
-  background-color: #1f232c !important;
-  opacity: 1 !important;
-  border-top: 1px #727b90 solid;
-  border-bottom: 1px #727b90 solid;
+/* ------------ Command Palette ------------ */
+.quick-input-titlebar {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
-/* List item label name */
-.monaco-list.list_id_1 .monaco-list-row.selected .label-name {
-  color: #fff !important;
-  opacity: 1 !important;
-  font-family: 'Fira Code' !important;
-}
-
-/* File explorer action buttons */
-.monaco-workbench .part.sidebar .title-actions .actions-container {
-  display: none;
-}
-
-/* File Explorer Item Label */
-.monaco-tree .monaco-tree-row .label-name,
-.monaco-list .monaco-list-row .monaco-icon-label .label-name {
-  font-family: 'Fira Code', monospace !important;
-  font-size: 13px !important;
-  font-weight: 400 !important;
-  color: rgba(171, 178, 191, 0.6) !important;
-}
-
-/* Sidebar top shadow */
-.monaco-scrollable-element>.shadow.top {
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, .75) !important;
-  top: -3px !important;
-}
-
-/* Sidebar title */
-.composite.title {
-  display: flex !important;
-  flex-direction: row !important;
-  align-items: center !important;
-  justify-items: center !important;
-  background-color: rgb(40, 44, 52) !important;
-
-}
-
-.composite.title h2 {
-  font-weight: bold !important;
-  font-size: 12px !important;
-  text-transform: uppercase;
-  color: #bc9abc !important;
-}
-
-.composite.title h2::before {
-  display: inline-block;
-  margin-right: 6px;
-  font-size: 1.1rem;
-  content: '🚀';
-
-}
-
-/* Scroll Bar */
-.slider {
-  position: absolute !important;
-  right: 1px !important;
-  width: 1px !important;
-  background: #bc9abc !important;
-  left: auto !important;
-}
-
-.codicon-toolbar-more,
-.codicon-word-wrap {
-  display: block !important;
-}
-
-/* Tooltip box style */
-.monaco-editor-hover,
-.monaco-hover {
-  box-shadow: 0px 8px 32px rgba(0, 0, 0, .45) !important;
-  padding: 10px !important;
-  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
-  backdrop-filter: blur(3px) !important;
-  border-radius: 20px !important;
-  border: none !important
-}
-
-/* Project title's style at the top. */
-.monaco-workbench .part.titlebar>.titlebar-container>.titlebar-center>.window-title>.command-center .action-item.command-center-center {
-  border: none !important;
-  background: transparent !important;
-}
-
-/* Project Title */
-.titlebar-left {
-  justify-content: flex-start !important;
-  flex-grow: 0 !important;
-  width: auto !important;
-}
-
-/* Search Label */
-.search-label {
-  font-family: 'Fira Code' !important;
-  font-size: 14px !important;
-  color: rgba(171, 178, 191, 0.6) !important;
-  display: block !important;
-  margin-left: 60px !important;
-}
-
-/* Search icon */
-.search-icon {
-  display: none !important;
-}
-
-.codicon-search::before {
-  display: none !important;
-}
-
-.codicon-arrow-right,
-.codicon-arrow-left {
-  display: none !important;
-}
-
-.titlebar-right>* {
-  display: none !important;
-}
-
-/* Command Palette */
 .quick-input-widget {
-  transform: translateY(-50%) !important;
-  top: 50% !important;
-  box-shadow: 0px 8px 20px rgba(0, 0, 0, .45) !important;
-  padding: 10px 10px 18px 10px !important;
-  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
-  backdrop-filter: blur(3px) !important;
-  border-radius: 20px !important;
+  background-color: var(--vscode-quickInput-background) !important;
+  border-radius: 14px !important;
+  min-height: 58px !important;
+  box-shadow: 0px 2px 10px 4px var(--vscode-widget-shadow) !important;
 }
 
-/* Remove background for lists */
-.monaco-list-rows {
-  background: transparent !important;
+.quick-input-widget.show-file-icons {
+  top: 25% !important;
+  padding-bottom: 4px;
 }
 
-/* List hover */
-.monaco-list-row:hover {
-  background: rgba(0, 0, 0, .2) !important;
+.quick-input-list {
+  padding: 0px 2px 0px 2px;
+  margin-top: 0;
 }
 
-.notifications-toasts .monaco-list-row:hover {
-  background: none !important;
+.quick-input-list [class^='monaco-list list_id'] .monaco-list-rows {
+  background: var(--vscode-quickInput-background) !important;
 }
 
-.label-name {
-   font-family: 'Fira Code' !important;
+.quick-input-list .monaco-list:not(.drop-target):not(.dragging) .monaco-list-row:hover:not(.selected):not(.focused) {
+  background-color: var(--vscode-quickInputList-focusBackground) !important;
 }
 
-.label-description {
-   font-family: 'Fira Code' !important;
+.quick-input-list [class^='monaco-list list_id'] .monaco-list-row.focused {
+  background-color: var(--vscode-quickInputList-focusBackground) !important;
 }
 
-/* Command palette text input */
-.quick-input-filter .monaco-inputbox {
-  border-radius: 12px !important;
-  padding: 8px !important;
-  border: none !important;
-  background-color: rgba(34, 34, 34, .40) !important;
-  font-family: "Fira Code" !important;
-  font-size: 14px !important;
-  margin-bottom: 16px !important;
+.quick-input-list .quick-input-list-entry {
+  padding: 0 2px;
+  border-top-color: var(--vscode-quickInputList-focusBackground) !important;
 }
 
-#command-blur {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, .15);
-  top: 0;
-  left: 0;
-  backdrop-filter: blur(8px);
+.monaco-workbench .synthetic-focus {
+  outline: var(--vscode-quickInput-background) !important;
 }
 
-/* Command palette's input box placeholder. */
-.monaco-inputbox input::placeholder {
-  color: rgba(255, 255, 255, .3) !important;
+.quick-input-and-message .monaco-inputbox>.ibwrapper {
+  background: var(--vscode-quickInput-background) !important;
+  border-color: var(--vscode-quickInput-background) !important;
+  border-width: 0 !important;
+  width: calc(100% - 3px * 2);
+  padding: 3px;
 }
 
-/* .monaco-workbench label {
-  color: #fff !important;
-  font-size: 14px !important;
-} */
-
-/* Container that holds the VS Code home icon. */
-.editor-group-watermark {
-  max-width: none !important;
+.quick-input-widget.show-checkboxes .quick-input-box,
+.quick-input-widget.show-checkboxes .quick-input-message {
+  margin-left: 0 !important;
 }
 
-.command-center-center {
-  width: auto !important;
+.quick-input-and-message .monaco-inputbox.idle {
+  border-color: var(--vscode-quickInput-background) !important;
+  background-color: var(--vscode-quickInput-background) !important;
 }
 
-.letterpress {
+.quick-input-and-message .monaco-inputbox>.ibwrapper>.input {
+  border-radius: 8px !important;
+  padding: 12px;
+  background-color: var(--vscode-quickInput-background) !important;
+  border: 1px solid var(--vscode-quickInputList-focusBackground);
+  margin-top: -3px;
+}
+
+.quick-input-list .monaco-list-row {
+  border-radius: 4px;
+}
+
+.quick-input-list .quick-input-list-entry-action-bar .action-label.codicon {
+  margin-right: 0;
+}
+
+.quick-input-action {
+  display: flex;
+  align-items: center;
+  margin-left: 2px;
+}
+
+.quick-input-count {
+  right: 14px;
+}
+
+/* ------------ Welcome Screen ------------ */
+.monaco-workbench .part.editor>.content .editor-group-container>.editor-group-watermark {
+  max-width: 100% !important;
+}
+
+.monaco-workbench .part.editor>.content .editor-group-container>.editor-group-watermark .letterpress {
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAB4AAAAQ4CAMAAADfDTFxAAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAOpQTFRFAAAAgHDfi2TpimToiWPoiWToimTpi2Toh2jnimXpimXqiWToiWToiWTpgGDfiWTniWXoh2Tnj2DvhmTmiWTnIK/fJqfrJafqJqfpJabpJaXqJ6brKKfnJafqJ6jqJabpJ6boJqfpJqXpJabpJqbpJqXnIJ/vJKbmJKboJKXnJKXpJabp/69A/6M+/6M//6I//6I+/6I+/6I9/6dA/6Q//6M+/6E+/6E+/6I+/59A/59A/6I//6E+IK+AFrl2F7h3F7h3F7h3F7l3F7h2GLd4Frh3F7p3GLd4GLh4EL9wGLh4F7Z2GLd4GLh4MuU0swAAAE50Uk5TABB/v9//73Agn2/vcH8QgN+AEHCgEH+/3//vcCCfb+9wf4Df34AQcHCAgKAQf7/f/+9wIJ9vgO/fECCfoBB/v9//73Agn2+AvxCfcKDf9W3Q7AAAFmdJREFUeJzt3euLXHlewOE53Z1OJ5OdZWYQUeKioC7CemHHVRzwHldk/19R8LriBUFdVMQ3yoiCeEGyk5lNZrqrywkB7equrupK18nnnOR5XiXV39+PftN8OJc6Z3gLAHjlhvoXAIA3kQADQECAASAgwAAQEGAACAgwAAQEGAACAgwAAQEGgIAAA0BAgAEgIMAAEBBgAAgIMAAEBBgAAgIMAAEBBoCAAANAQIABICDAABAQYAAICDAABAQYAAICDAABAQaAgAADQECAASAgwAAQEGAACAgwAAQEGAACAgwAAQEGgIAAA0BAgAEgIMAAEBBgAAgIMAAEBBgAAgIMAAEBBoCAAANAQIABICDAABAQYAAICDAABAQYAAICDAABAQaAgAADQECAASAgwAAQEGAACAgwAAQEGAACAgwAAQEGgIAAA0BAgAEgIMAAEBBgAAgIMAAEBBgAAgIMAAEBBoCAAANAQIABICDAABAQYAAICDAABAQYAAICDAABAQaAgAADQECAASAgwAAQEGAACAgwAAQEGAACAgwAAQEGgIAAA0BAgAEgIMAAEBBgAAgIMAAEBBgAAgIMAAEBBoCAAANAQIABICDAABAQYAAICDAABAQYAAICDAABAQaAgAADQECAASAgwAAQEGAACAgwAAQEGAACAgwAAQEGgIAAA0BAgAEgIMAAEBBgAAgIMAAEBBgAAgIMAAEBBoCAAANAQIABICDAABAQYAAICDAABAQYAAICDAABAQaAgAADQECAASAgwAAQEGAACAgwAAQEGAACAgwAAQEGgIAAA0BAgAEgIMAAEBBgAAgIMAAEBBgAAgIMAAEBBoCAAANAQIABICDAABAQYAAICDAABAQYAAICDAABAQaAgAADQECAASAgwAAQEGAACAgwAAQEGAACAgwAAQEGgIAAA0BAgAEgIMAAEBBgAAgIMAAEBBgAAgIMAAEBBoCAAANAQIABICDAABAQYAAICDAABAQYAAICDAABAQaAgAADQECAASAgwAAQEGAACAgwAAQEGAACAgwAAQEGgIAAA0BAgAEgIMAAEBBgAAgIMAAEBBgAAgIMAAEBBoCAAANAQIABICDAABAQYAAICDAABAQYAAICDAABAQaAgAADQECAASAgwAAQEGAACAgwAAQEGAACAgwAAQEGgIAAA0BAgAEgIMAAEBBgAAgIMAAEBBgAAgIMAAEBBoCAAANAQIABICDAABAQYAAICDAABAQYAAICDAABAQaAgAADQECAASAgwAAQEGAACAgwAAQEGAACAgwAAQEGgIAAA0BAgAEgIMAAEBBgAAgIMAAEBBgAAgIMAAEBBoCAAANAQIABICDAABAQYAAICDAABAQYAAICDAABAQaAgAADQECAASAgwAAQEGAACAgwAAQEGAACAgwAAQEGgIAAA0BAgAEgIMAAEBBgAAgIMAAEBBgAAgIMAAEBBoCAAANAQIABICDAABAQYAAICDAABAQYAAICDAABAQaAgAADQECAASAgwAAQEGAACAgwAAQEGAACAgwAAQEGgIAAA0BAgAEgIMAAEBBgAAgIMAAEBBgAAgIMAAEBBoCAAANAQIABICDAABAQYAAICDAABAQYAAICDAABAQaAgAADQECAASAgwAAQEGAACAgwAAQEGAACAgwAAQEGgIAAA0BAgAEgIMAAEBBgAAgIMAAEBBgAAgIMAAEBBoCAAANAQIABICDAABAQYAAICDAABAQYAAICDAABAQaAgAADQECAASAgwAAQEGAACAgwAAQEGAACAgwAAQEGgIAAA0BAgAEgIMAAEBBgAAgIMAAEBBgAAgIMAAEBBoCAAANAQIABICDAABAQYAAICDAA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AQEGgIAAA0BAgAEgIMAAEBBgAAgIMAAEBBgAAgIMAAEBBoCAAANAQIABICDAABAQYAAICDAABAQYAAICDAABAQaAgAADQECAASAgwAAQEGAACAgwAAQEGAACAgwAAQEGgIAAA0BAgAEgIMAAEBBgAAgIMAAEBBgAAgIMAAEBBoCAAANAQIABICDAABAQYAAICDAABAQYAAICDAABAQaAgAADQECAASAgwAAQEGAACAgwAAQEGAACAgwAAQEGgIAAA0BAgAEgIMAAEBBgAAgIMAAEBBgAAgIMAAEBBoCAAANAQIABICDAABAQYAAICDAABAQYAAICDAABAQaAgAADQECAASAgwAAQEGAACAgwAAQEGAACAgwAAQEGgIAAA0BAgAEgIMAAEBBgAAgIMAAEBBgAAgIMAAEBBoCAAANAQIABICDAABAQYAAICDAABAQYAAICDAABAQaAgAADQECAASAgwAAQEGAACAgwAAQEGAACAgwAAQEGgIAAA0BAgAEgIMAAEBBgAAgIMAAEBBgAAgIMAAEBBoCAAANAQIABICDAABAQYAAICDAABAQYAAICDAABAQaAgAADQECAASAgwAAQEGAACAgwAAQEGAACAgwAAQEGgIAAA0BAgAEgIMAAEBBgAAgIMAAEBBgAAgIMAAEBBoCAAANAQIABICDAABAQYAAICDAABAQYAAICDAABAQaAgAADQECAASAgwAAQEGAACAgwAAQEGAACAgwAAQEGgIAAA0BAgAEgIMAAEBBgAAgIMAAEBBgAAgIMAAEBBoCAAANAQIABICDAABAQYAAICDAABAQYAAICDAABAQaAgAADQECAASAgwAAQEGAACAgwAAQEGAACAgwAAQEGgIAAA0BAgAEgIMAAEBBgAAgIMAAEBBgAAgIMAAEBBoCAAANAQIABICDAABAQYAAICDAABAQYAAICDAABAQaAgAADQECAASAgwAAQEGAACAgwAAQEGAACAgwAAQEGgIAAA0BAgAEgIMAAEBBgAAgIMAAEBBgAAgIMAAEBBoCAAANAQIABICDAABAQYAAICDAABAQYAAICDAABAQaAgAADQECAASAgwAAQEGAACAgwAAQEGAACAgwAAQEGgIAAA0BAgAEgIMAAEBBgAAgIMAAEBBgAAgIMAAEBBoCAAANAQIABICDAABAQYAAICDAABAQYAAICDAABAQaAgAADQECAASAgwAAQEGAACAgwAAQEGAACAgwAAQEGgIAAA0BAgAEgIMAAEBBgAAgIMAAEBBgAAgIMAAEBBoCAAANAQIABICDAABAQYAAICDAABAQYAAICDAABAQaAgAADQECAASAgwAAQEGAACAgwAAQEGAACAgwAAQEGgIAAA0BAgAEgIMAAEBBgAAgIMAAEBBgAAgIMAAEBBoCAAANAQIABICDAABAQYAAICDAABAQYAAICDAABAQaAgAADQECAASAgwAAQEGAACAgwAAQEGAACAgwAAQEGgIAAA0BAgAEgIMAAEBBgAAgIMAAEBBgAAgIMAAEBBoCAAANAQIABICDAABAQYAAICDAABAQYAAICDAABAQaAgAADQECAASAgwAAQEGAACAgwAAQEGAACAgwAAQEGgIAAA0BAgAEgIMAAEBBgAAgIMAAEBBgAAgIMAAEBBoCAAANAQIABICDAABAQYAAICDAABAQYAAICDAABAQaAgAADQECAASAgwAAQEGAACAgwAAQEGAACAgwAAQEGgIAAA0BAgAEgIMAAEBBgAAgIMAAEBBgAAgIMAAEBBoCAAANAQIABICDAABAQYAAICDAABAQYAAICDAABAQaAgAADQECAASAgwAAQEGAACAgwAAQEGAACAgwAAQEGgIAAA0BAgAEgIMAAEBBgAAgIMAAEBBgAAgIMAAEBBoCAAANAQIABICDAABAQYAAICDAABAQYAAICDAABAQaAgAADQECAASAgwAAQEGAACAgwAAQEGAACAgwAAQEGgIAAA0BAgAEgIMAAEBBgAAgIMAAEBBgAAgIMAAEBBoCAAANAQIABICDAABAQYAAICDAABAQYAAICDAABAQaAgAADQECAASAgwAAQEGAACAgwAAQEGAACAgwAAQEGgIAAA0BAgAEgIMAAEBBgAAgIMAAEBBgAAgIMAAEBBoCAAANAQIABICDAABAQYAAICDAABAQYAAL/C2A2ykg7glalAAAAAElFTkSuQmCC) !important;
   background-repeat: no-repeat no-repeat !important;
   background-position: center center !important;
   background-size: contain !important;
   width: 60% !important;
+}
+
+.monaco-workbench .part.editor>.content .editor-group-container>.editor-group-watermark .shortcuts {
+  display: none;
+}
+
+/* ------------ Editor Screen ------------ */
+.monaco-editor .peekview-widget .head .peekview-title {
+  flex: 5 !important;
+}
+
+.line-numbers {
+  transform: scale(1);
+  transition: all 10 linear;
+}
+
+.line-numbers.active-line-number {
+  transform: scale(1.25) translateX(-3px);
+  animation: .2s ease-out scaleSize;
+}
+
+@keyframes scaleSize {
+  0% {
+    transform: scale(.75)
+  }
+
+  100% {
+    transform: scale(1.35) translateX(-3px);
+  }
+}
+
+#bg-blur {
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, .15);
+  backdrop-filter: blur(6px);
+  transition: all 1s ease-in;
+}
+
+/* ------------ Find Widget ------------ */
+.monaco-editor .find-widget {
+  border-radius: 4px;
+  padding-top: 1px !important;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.15);
+  top: 3px !important;
+}
+
+.monaco-editor .find-widget .monaco-sash {
+  display: none;
+}
+
+.monaco-editor .find-widget .button.toggle {
+  left: 2px;
+  outline: none !important;
+}
+
+.monaco-editor .find-widget .button.toggle:hover {
+  background-color: var(--vscode-editorWidget-background) !important;
+}
+
+/* ------------ Notifications ------------ */
+.notifications-list-container .monaco-list.mouse-support .monaco-list-row {
+  border-radius: 0;
+  width: 100%;
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+}
+
+/* ------------ Terminal ------------ */
+.monaco-workbench .pane-body.integrated-terminal .terminal-tabs-entry.is-active:before {
+  display: block;
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 0;
 }
