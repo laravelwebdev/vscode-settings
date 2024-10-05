@@ -1,4 +1,6 @@
-.mac {
+.mac, 
+.windows, 
+.linux {
   font-family: 'Fira Code' !important;
   color: #008c7d !important;
 }
