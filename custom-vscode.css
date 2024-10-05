@@ -38,10 +38,6 @@ li.action-item.icon {
   border: 2px solid transparent;
 }
 
-li.action-item.icon:hover {
-  border: 2px solid #bc9abc !important;
-}
-
 li.action-item.icon.checked:hover .codicon:before {
    color: var(--vscode-activityBar-activeBorder) !important;
 }
@@ -221,7 +217,7 @@ li.action-item.icon.checked a.action-label.codicon {
 .search-label {
   font-family: 'Fira Code' !important;
   font-size: 14px !important;
-  color: rgba(171, 178, 191, 0.6) !important;
+  color: #bc9abc !important;
   display: block !important;
 }
 
