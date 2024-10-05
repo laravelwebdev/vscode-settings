@@ -219,7 +219,7 @@ li.action-item.icon.checked a.action-label.codicon {
 
 /* Project Title */
 .titlebar-left {
-  justify-content: flex-start !important;
+  justify-content: center !important;
   flex-grow: 0 !important;
   width: auto !important;
 }
@@ -230,17 +230,16 @@ li.action-item.icon.checked a.action-label.codicon {
   font-size: 14px !important;
   color: rgba(171, 178, 191, 0.6) !important;
   display: block !important;
-  margin-left: 60px !important;
 }
 
 /* Search icon */
-/* .search-icon {
+.search-icon {
   display: none !important;
 }
 
 .codicon-search::before {
   display: none !important;
-} */
+}
 
 .codicon-arrow-right,
 .codicon-arrow-left {
