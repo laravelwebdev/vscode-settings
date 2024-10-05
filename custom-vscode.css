@@ -10,7 +10,7 @@
 
 /* ------------ Activity Bar ------------ */
 .monaco-workbench .activitybar>.content {
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .monaco-workbench .activitybar>.content>.composite-bar {
@@ -39,19 +39,19 @@ li.action-item.icon {
 }
 
 li.action-item.icon:hover {
-  border: 2px solid var(--vscode-icon-foreground);
+  border: 2px solid #bc9abc !important;
 }
 
 li.action-item.icon.checked:hover .codicon:before {
-  color: var(--vscode-activityBar-activeBorder) !important;
+  color: #bc9abc  !important;
 }
 
 li.action-item.icon.checked {
-  border: 2px solid var(--vscode-activityBar-activeBorder);
+  border: 2px solid #bc9abc !important;
 }
 
 li.action-item.icon.checked a.action-label.codicon {
-  color: var(--vscode-activityBar-activeBorder) !important;
+  color: #bc9abc !important;
   border-radius: 12px !important;
 }
 
