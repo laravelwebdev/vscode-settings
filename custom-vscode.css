@@ -4,6 +4,9 @@
   font-family: 'Fira Code' !important;
   color: #008c7d !important;
 }
+xterm-decoration-overview-ruler {
+  display: none !important;
+}
 
 /* ------------ Activity Bar ------------ */
 .monaco-workbench .activitybar>.content {
