@@ -2,8 +2,8 @@
 .windows, 
 .linux {
   font-family: 'Fira Code' !important;
-  color: #008c7d !important;
 }
+
 .xterm-decoration-overview-ruler {
   display: none !important;
 }
@@ -215,13 +215,6 @@ li.action-item.icon.checked a.action-label.codicon {
 .monaco-workbench .part.titlebar>.titlebar-container>.titlebar-center>.window-title>.command-center .action-item.command-center-center {
   border: none !important;
   background: transparent !important;
-}
-
-/* Project Title */
-.titlebar-left {
-  justify-content: center !important;
-  flex-grow: 0 !important;
-  width: auto !important;
 }
 
 /* Search Label */
