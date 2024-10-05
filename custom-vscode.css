@@ -234,13 +234,13 @@ li.action-item.icon.checked a.action-label.codicon {
 }
 
 /* Search icon */
-.search-icon {
+/* .search-icon {
   display: none !important;
 }
 
 .codicon-search::before {
   display: none !important;
-}
+} */
 
 .codicon-arrow-right,
 .codicon-arrow-left {
