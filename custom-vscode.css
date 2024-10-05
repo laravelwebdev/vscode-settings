@@ -80,10 +80,13 @@ li.action-item.icon.checked a.action-label.codicon {
 }
 
 .line-numbers {
-  position: relative !important;
-  width: 35px !important;
-  font-size: 14px !important;
-  opacity: .3;
+  transform: scale(1);
+  transition: all 10 linear;
+}
+
+.line-numbers.active-line-number {
+  transform: scale(1.25) translateX(-3px);
+  animation: .2s ease-out scaleSize;
 }
 
 /* Code canvas top shadow */
