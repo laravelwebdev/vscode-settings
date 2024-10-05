@@ -131,10 +131,14 @@ li.action-item.icon.checked a.action-label.codicon {
 }
 
 /* List item label name */
-.monaco-list.list_id_1 .monaco-list-row.selected .label-name {
-  color: #fff !important;
+.monaco-list.list_id_1 .monaco-list-row .selected .label-name {
+  background-color: #1f232c !important;
   opacity: 1 !important;
   font-family: 'Fira Code' !important;
+}
+
+.monaco-list.list_id_1 .monaco-list-row.selected {
+    background-color: var(--vscode-list-inactiveSelectionBackground) !important;
 }
 
 /* File explorer action buttons */
