@@ -117,6 +117,10 @@ li.action-item.icon.checked a.action-label.codicon {
   background-color: rgb(40, 44, 52) !important;
 }
 
+.monaco-tl-indent {
+  display: none !important;
+}
+
 
 /* File Explorer Selected Item */
 .monaco-list.list_id_1 .monaco-list-row.selected {
