@@ -43,7 +43,7 @@ li.action-item.icon:hover {
 }
 
 li.action-item.icon.checked:hover .codicon:before {
-  color: #bc9abc  !important;
+   color: var(--vscode-activityBar-activeBorder) !important;
 }
 
 li.action-item.icon.checked {
