@@ -1,0 +1,100 @@
+{
+  "editor.suggestFontSize": 16,
+  "editor.suggestLineHeight": 26,
+  "terminal.integrated.lineHeight": 1.2,
+  "terminal.integrated.fontSize": 12,
+  "search.useIgnoreFiles": true,
+  /**
+  * Code
+  **/
+  // Include "-" in word selection.
+  "editor.wordSeparators": "`~!@#%^&*()=+[{]}\\|;:'\",.<>/?",
+  "emmet.includeLanguages": {
+    "blade": "html",
+    "vue-html": "html",
+    "vue": "html",
+    "react": "html",
+    "javascript": "html"
+  },
+  "files.associations": {
+    ".php_cs": "php",
+    ".php_cs.dist": "php"
+  },
+  /**
+  * PHP
+  **/
+  "php.suggest.basic": false,
+  "security.workspace.trust.untrustedFiles": "open",
+  "editor.linkedEditing": true,
+  "editor.formatOnSave": true,
+  "editor.fontSize": 13,
+  "editor.minimap.maxColumn": 250,
+  "explorer.confirmDelete": false,
+  "editor.accessibilitySupport": "off",
+  "editor.fontWeight": "400",
+  "editor.inlineSuggest.suppressSuggestions": true,
+  "editor.padding.top": 16,
+  "editor.cursorBlinking": "solid",
+  "editor.stickyScroll.enabled": false,
+  "editor.lineHeight": 22,
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": [
+          "comment",
+          "keyword",
+          "variable.language",
+          "entity.other.attribute-name.html",
+          "entity.other.attribute-name",
+          "keyword.control",
+          "storage.type",
+          "comment",
+          "comment.block",
+          "comment.line"
+        ],
+        "settings": {
+          "fontStyle": ""
+        }
+      }
+    ]
+  },
+  "vscode_custom_css.imports": [
+    "https://laravelwebdev.github.io/vscode-settings/custom-vscode.css",
+    "https://laravelwebdev.github.io/vscode-settings/vscode-script.js"
+  ],
+  "workbench.tree.enableStickyScroll": false,
+  "workbench.startupEditor": "none",
+  "git.enableSmartCommit": true,
+  "workbench.iconTheme": "symbols",
+  "workbench.sideBar.location": "right",
+  "files.autoSave": "afterDelay",
+  "workbench.editor.showTabs": "single",
+  "breadcrumbs.enabled": false,
+  "git.confirmSync": false,
+  "[php]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "open-southeners.laravel-pint"
+  },
+  "laravel-pint.enable": true,
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+  "editor.guides.bracketPairs": "active",
+  "workbench.colorCustomizations": {
+    "terminal.background": "#00000000"
+  },
+  "workbench.settings.applyToAllProfiles": [
+    "workbench.colorCustomizations"
+  ],
+  "window.titleBarStyle": "custom",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "fittencode.showSubmenu": true,
+  "diffEditor.renderSideBySide": false,
+  "update.showReleaseNotes": false,
+  "editor.minimap.enabled": false,
+  "workbench.colorTheme": "One Dark Pro",
+  "editor.fontFamily": "JetBrains Mono",
+  "editor.fontLigatures": true,
+  "terminal.integrated.fontFamily": "MesloLGS NF",
+  "notebook.defaultFormatter": "open-southeners.laravel-pint",
+  "editor.defaultFormatter": "open-southeners.laravel-pint",
+  "accessibility.voice.keywordActivation": "chatInView",
+}
