@@ -4,6 +4,10 @@
   font-family: 'JetBrains Mono' !important;
 }
 
+.monaco-workbench .part.statusbar>.items-container>.statusbar-item.remote-kind {
+    background-color: #bc9abc !important;
+}
+
 .xterm-decoration-overview-ruler {
   display: none !important;
 }
