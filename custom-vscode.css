@@ -13,6 +13,10 @@
    background-color: #bc9abc !important;
 }
 
+.shortcuts {
+  display: none !important;
+}
+
 .xterm-decoration-overview-ruler {
   display: none !important;
 }
