@@ -154,6 +154,10 @@ li.action-item.icon.checked a.action-label.codicon {
     background-color: var(--vscode-list-inactiveSelectionBackground) !important;
 }
 
+.monaco-workbench .activitybar>.content :not(.monaco-menu)>.monaco-action-bar .action-label:not(.codicon) {
+    padding:0px;
+}
+
 /* File explorer action buttons */
 .monaco-workbench .part.sidebar .title-actions .actions-container {
   display: none;
