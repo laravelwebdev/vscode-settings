@@ -51,14 +51,19 @@
             }
         ]
     },
-    "vscode_custom_css.imports": [
-        "https://laravelwebdev.github.io/vscode-settings/custom-vscode.css",
-        "https://laravelwebdev.github.io/vscode-settings/vscode-script.js"
-    ],
+    "custom-ui-style.external.imports": [
+        {
+          "type": "css",
+          "url": "https://laravelwebdev.github.io/vscode-settings/custom-vscode.css",
+        },
+        {
+          "type": "js",
+          "url": "https://laravelwebdev.github.io/vscode-settings/vscode-script.js",
+        },
+      ],
     "workbench.tree.enableStickyScroll": false,
     "workbench.startupEditor": "none",
     "git.enableSmartCommit": true,
-    "workbench.iconTheme": "a-file-icon-vscode",
     "workbench.sideBar.location": "right",
     "files.autoSave": "afterDelay",
     "workbench.editor.showTabs": "single",
@@ -79,15 +84,42 @@
     ],
     "window.titleBarStyle": "custom",
     "diffEditor.ignoreTrimWhitespace": false,
-    "fittencode.showSubmenu": true,
     "diffEditor.renderSideBySide": false,
     "update.showReleaseNotes": false,
     "editor.minimap.enabled": false,
-    "workbench.colorTheme": "One Dark Pro",
+    "workbench.colorTheme": "Atom One Dark",
     "editor.fontFamily": "JetBrains Mono",
     "editor.fontLigatures": true,
     "terminal.integrated.fontFamily": "MesloLGS NF",
     "notebook.defaultFormatter": "open-southeners.laravel-pint",
     "editor.defaultFormatter": "open-southeners.laravel-pint",
     "accessibility.voice.keywordActivation": "chatInView",
+    "extensions.ignoreRecommendations": true,
+    "settingsSync.ignoredExtensions": [
+        "narasimapandiyan.jetbrainsmono",
+        "ms-azuretools.vscode-docker"
+    ],
+    "git.openRepositoryInParentFolders": "never",
+
+    "custom-ui-style.stylesheet": {
+        ".notification-toast": "box-shadow: none !important",
+        ".quick-input-widget.show-file-icons": "box-shadow: none !important",
+        ".quick-input-widget": "top: 25vh !important",
+        ".editor-widget.find-widget": "box-shadow: none; border-radius: 4px",
+        ".quick-input-titlebar": "background: #100B15 !important",
+        ".sidebar .title-label": "padding: 0 !important",
+        ".sidebar": "border: none !important",
+        ".monaco-workbench .monaco-list:not(.element-focused):focus:before": "outline: none !important",
+        ".monaco-list-row.focused": "outline: none !important",
+        ".monaco-editor .scroll-decoration": "display: none",
+        ".title.show-file-icons .label-container .monaco-icon-label.file-icon": "justify-content: center; padding: 0 !important",
+        ".title .monaco-icon-label:after": "margin-right: 0",
+        ".monaco-workbench .part.editor > .content .editor-group-container > .title > .label-container > .title-label": "padding-left: 60px",
+        ".monaco-editor .cursors-layer .cursor": "background-image: linear-gradient(135deg, #ffaffc 10%, #DA70D6 100%)"
+    },
+    "github.copilot.nextEditSuggestions.enabled": true,
+    "git.autofetch": true,
+    "workbench.productIconTheme": "a-file-icon-vscode-product-icon-theme",
+    "workbench.iconTheme": "a-file-icon-vscode",
+
 }
