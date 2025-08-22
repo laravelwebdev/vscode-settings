@@ -124,7 +124,9 @@ li.action-item.icon.checked a.action-label.codicon {
 }
 
 .part.statusbar,
-.part.titlebar {
+.part.titlebar.
+.content,
+.content.empty {
   background-color: rgb(40, 44, 52) !important;
 }
 
