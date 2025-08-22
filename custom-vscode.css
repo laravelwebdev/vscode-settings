@@ -8,7 +8,7 @@
     background-color: #bc9abc !important;
 }
 
-.monaco-workbench .part titlebar .activitybar>.content :not(.monaco-menu)>.monaco-action-bar .badge .badge-content{
+.monaco-workbench .activitybar>.content :not(.monaco-menu)>.monaco-action-bar .badge .badge-content{
   top: 20px !important;
    background-color: #bc9abc !important;
 }
@@ -123,7 +123,8 @@ li.action-item.icon.checked a.action-label.codicon {
   display: none !important;
 }
 
-.part.statusbar {
+.part.statusbar,
+.part.titlebar {
   background-color: rgb(40, 44, 52) !important;
 }
 
